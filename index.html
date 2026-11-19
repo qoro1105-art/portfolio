@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>김소망 포트폴리오</title>
+<meta name="description" content="그림을 그리는 그래픽 디자이너 김소망의 포트폴리오. 전시·행사 그래픽, 브랜딩, 편집, 일러스트레이션.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#work">작업으로 바로가기</a>
+
+<header class="top">
+  <a class="brand" href="#">김소망</a>
+  <nav aria-label="주요 메뉴">
+    <a href="#work">작업</a>
+    <a href="#teaching">수업</a>
+    <a href="#about">소개</a>
+    <a href="#contact">연락하기</a>
+  </nav>
+</header>
+
+<main>
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="hero-text">
+      <h1 id="hero-title">
+        <span class="hero-name">김소망</span>
+        <span class="hero-line">그림을 그리고,<br>그 그림으로 전시와 홍보물과 책을 만듭니다.</span>
+      </h1>
+      <p class="hero-sub">그래픽 디자이너이자 일러스트레이터입니다. 국립부산국악원 전시 패널부터 BEXCO 국제 행사의 현수막까지 실제로 인쇄되어 걸리는 작업을 해 왔고, 지금은 대안교육기관 링컨학교에서 학생들에게 디자인과 미술을 가르치고 있습니다.</p>
+      <a class="hero-cta" href="#work">작업 보기</a>
+    </div>
+    <figure class="hero-art">
+      <img src="img/hero-clover.jpg" alt="토끼풀 꽃을 든 소녀 일러스트" width="1131" height="1600">
+      <figcaption>개인 작업, 토끼풀 소녀</figcaption>
+    </figure>
+  </section>
+
+  <section class="field" aria-labelledby="field-title">
+    <h2 id="field-title">현장에 걸린 작업</h2>
+    <p>화면 속 시안이 아니라, 실제로 출력되어 설치된 모습입니다.</p>
+    <ul class="field-strip">
+      <li><button type="button" data-open="dc-install"><img src="img/dc-install.jpg" alt="국립부산국악원 복도에 설치된 대청여관 전시 패널" loading="lazy"></button><span>국립부산국악원 「대청여관」 전시</span></li>
+      <li><button type="button" data-open="psf-outdoor"><img src="img/psf-outdoor.jpg" alt="BEXCO 앞 야외 현수막과 단체 사진" loading="lazy"></button><span>2025 Public Servant Forum, BEXCO 야외 현수막</span></li>
+      <li><button type="button" data-open="chum-install"><img src="img/chum-install.jpg" alt="한복과 패널이 놓인 춤바람 전시 공간" loading="lazy"></button><span>「춤바람, 봄바람이 되어오다」 전시</span></li>
+      <li><button type="button" data-open="psf-stage"><img src="img/psf-stage.jpg" alt="행사장 무대 양옆의 세로 현수막" loading="lazy"></button><span>행사장 세로 현수막</span></li>
+      <li><button type="button" data-open="psf-xbanner"><img src="img/psf-xbanner.jpg" alt="행사장 입구 X배너" loading="lazy"></button><span>행사장 입구 X배너</span></li>
+      <li><button type="button" data-open="psf-brochure"><img src="img/psf-brochure.jpg" alt="인쇄된 Public Servant Forum 브로슈어 표지" loading="lazy"></button><span>행사 브로슈어</span></li>
+    </ul>
+  </section>
+
+  <section id="work" class="work" aria-labelledby="work-title">
+    <div class="work-head">
+      <h2 id="work-title">작업</h2>
+      <div class="filters" role="group" aria-label="분야별로 보기">
+        <button type="button" data-filter="all" aria-pressed="true">전체</button>
+        <button type="button" data-filter="public" aria-pressed="false">기관·행사</button>
+        <button type="button" data-filter="brand" aria-pressed="false">브랜딩·편집</button>
+        <button type="button" data-filter="illust" aria-pressed="false">일러스트</button>
+      </div>
+    </div>
+    <div id="projects"></div>
+    <noscript><p>작업 목록을 보려면 자바스크립트를 켜 주세요.</p></noscript>
+  </section>
+
+  <section id="teaching" class="teaching" aria-labelledby="teaching-title">
+    <div class="t-intro">
+      <h2 id="teaching-title">수업</h2>
+      <div>
+        <p class="t-lead">2025년 5월부터 링컨학교에서 학생들과 함께 지내며 디자인과 미술을 가르치고 있습니다.</p>
+        <p>기숙사 사감으로 학생들의 생활을 가까이에서 보기 때문에, 수업 주제도 학생들이 실제로 좋아하는 것에서 시작합니다. 수업 슬라이드와 활동지는 모두 직접 디자인했습니다.</p>
+      </div>
+    </div>
+
+    <div class="t-lessons">
+      <div>
+        <h3>드로잉 수업</h3>
+        <ul>
+          <li>나만의 동물 캐릭터 만들기</li>
+          <li>스티커 도안 만들기</li>
+          <li>성격 문양 만들기</li>
+          <li>내가 좋아하는 것으로 키링 만들기</li>
+        </ul>
+      </div>
+      <div>
+        <h3>미리캔버스 수업 <span>1학년, 4주 과정</span></h3>
+        <ul>
+          <li>나를 소개하는 카드뉴스</li>
+          <li>꿈 찾기 카드뉴스</li>
+          <li>캐릭터 만들기와 발표</li>
+        </ul>
+      </div>
+      <div>
+        <h3>직접 만든 수업자료</h3>
+        <ul>
+          <li>수업 슬라이드(PPT)</li>
+          <li>단계별 활동지와 학습지</li>
+          <li>제출 전 체크리스트</li>
+        </ul>
+      </div>
+    </div>
+
+    <article class="t-case" aria-labelledby="key-title">
+      <h3 id="key-title">수업 예시: 내가 좋아하는 것으로 키링 만들기</h3>
+      <p class="t-case-text">“지금 가방에 키링 달고 온 사람?”이라는 질문으로 시작해, 좋아하는 것을 하나 골라 실제로 주문할 수 있는 키링 도안까지 만드는 한 차시 수업입니다.</p>
+      <ol class="t-steps">
+        <li><strong>찾기</strong>좋아하는 음식, 동물, 물건, 사람, 장소, 취미 중 하나 고르기</li>
+        <li><strong>스케치</strong>같은 대상을 서로 다른 모양으로 세 번 그려 보기</li>
+        <li><strong>도안</strong>굵은 외곽선과 단순한 면으로 출력할 수 있게 정리하기</li>
+        <li><strong>소개</strong>“나는 ○○를 좋아해서 이 키링을 만들었어요” 발표하기</li>
+      </ol>
+      <h4 class="t-sub">수업 슬라이드</h4>
+      <ul class="gallery g-slides" id="teach-slides"></ul>
+      <h4 class="t-sub">학생 결과물</h4>
+      <ul class="gallery g-kids" id="teach-kids"></ul>
+    </article>
+
+    <article class="t-case" aria-labelledby="stk-title">
+      <h3 id="stk-title">스티커 도안 만들기, 학생 결과물</h3>
+      <p class="t-case-text">각자 캐릭터를 정하고 표정과 동작을 바꿔 가며 스티커 한 세트를 완성했습니다.</p>
+      <ul class="gallery g-kids" id="teach-stickers"></ul>
+    </article>
+    <p class="t-note">학생 작품은 이름을 빼고 실었습니다.</p>
+  </section>
+
+  <section id="about" class="about" aria-labelledby="about-title">
+    <h2 id="about-title">소개</h2>
+    <div class="about-body">
+      <p class="about-lead">손으로 그린 그림을 디자인의 재료로 씁니다.</p>
+      <p>국악극 전시 패널에는 1950년대 국악인의 실루엣을 그려 넣었고, 북카페 홍보물에는 책과 찻잔을 그렸습니다. 같은 그림을 웹 배너, 모바일 포스터, 인스타그램 카드처럼 쓰임새에 맞게 다시 짜는 일도 함께 해 왔습니다.</p>
+      <p>한 장의 일러스트에서 인쇄물과 현수막까지 이어지는 과정을 직접 겪어 봤기 때문에, 그 과정을 학생들에게 차근차근 보여 주고 설명할 수 있습니다.</p>
+      <h3 class="career-title">경력</h3>
+      <ul class="career">
+        <li><span class="c-date">2025.05 ~ 현재</span><span><strong>링컨학교</strong> (대안교육기관)<br>기숙사 사감, 디자인과 미술 수업</span></li>
+      </ul>
+      <h3 class="career-title">주요 작업 기관</h3>
+      <ul class="career">
+        <li><span class="c-date">전시·홍보</span><span><strong>국립부산국악원</strong><br>전시 패널, 웹·모바일 홍보물, 카드뉴스</span></li>
+        <li><span class="c-date">행사</span><span><strong>2025 Public Servant Forum</strong><br>BEXCO 행사 그래픽 전반</span></li>
+      </ul>
+    </div>
+    <dl class="skills">
+      <div><dt>편집 디자인</dt><dd>전시 패널 8종, 브로슈어, 3단 리플렛, 졸업전시 도록</dd></div>
+      <div><dt>브랜드 디자인</dt><dd>베이커리 브랜드 「진심」 IMC, Cake 아이덴티티</dd></div>
+      <div><dt>일러스트레이션</dt><dd>에세이 책 삽화 17점, 개인 작업, 회화</dd></div>
+      <div><dt>대형 출력물</dt><dd>야외·실내 현수막, X배너, 피켓</dd></div>
+      <div><dt>디지털 홍보물</dt><dd>웹 배너 규격별 제작, 인스타그램 카드뉴스</dd></div>
+      <div><dt>타이포그래피와 3D</dt><dd>레터링 「Libertad 자유」, 3D 모델링 과제</dd></div>
+    </dl>
+  </section>
+
+  <section id="contact" class="contact" aria-labelledby="contact-title">
+    <h2 id="contact-title">연락하기</h2>
+    <p>포트폴리오 원본 파일이나 작업 과정이 궁금하시면 편하게 연락 주세요.</p>
+    <ul class="contact-list">
+      <li><span>이메일</span><a href="mailto:tiop501@naver.com">tiop501@naver.com</a></li>
+      <li><span>인스타그램</span><a href="https://www.instagram.com/sommm617/" target="_blank" rel="noopener">@sommm617</a></li>
+      <li><span>전화</span><a href="tel:01025613405">010-2561-3405</a></li>
+    </ul>
+  </section>
+</main>
+
+<footer class="foot">
+  <p>© 2026 김소망. 모든 작업물의 저작권은 작가와 각 의뢰 기관에 있습니다.</p>
+</footer>
+
+<dialog id="viewer" aria-label="작업 크게 보기">
+  <figure>
+    <img id="viewer-img" alt="">
+    <figcaption id="viewer-cap"></figcaption>
+  </figure>
+  <button type="button" class="v-btn v-prev" aria-label="이전 이미지">‹</button>
+  <button type="button" class="v-btn v-next" aria-label="다음 이미지">›</button>
+  <button type="button" class="v-close" aria-label="닫기">닫기</button>
+</dialog>
+
+<script src="script.js"></script>
+</body>
+</html>
