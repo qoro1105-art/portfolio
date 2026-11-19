@@ -1,6 +1,16 @@
 // 작업 데이터: 이미지 파일은 img/ 폴더, 이름만 적습니다.
 const PROJECTS = [
   {
+    id: 'ontium', cat: 'brand', layout: 'boards',
+    title: '「온티움」 어르신 도시락 브랜드',
+    client: '브랜딩 프로젝트', kind: '네이밍, 로고, 캐릭터, 패키지, 앱 UI/UX, 홍보 프로그램',
+    text: '틀니를 쓰는 어르신을 위한 감성 도시락 브랜드입니다. 씹기 어려워 영양이 부족해지는 문제에서 출발해, 따뜻할 온(溫), 차(Tea), 움직일 동(動)을 합친 이름과 햇살 로고, 치아 캐릭터 티움이를 만들었습니다. 천 보자기 도시락 패키지, 자녀가 부모님 식사를 챙기는 앱, 사연 팟캐스트와 걷기 모임까지 브랜드 경험 전체를 설계했습니다.',
+    images: [
+      ['ontium-1', '브랜드 보드, 배경과 문제, 네이밍, 로고, 캐릭터, 패키지'],
+      ['ontium-2', '브랜드 보드, 앱 UI/UX와 홍보 프로그램'],
+    ],
+  },
+  {
     id: 'daecheong', cat: 'public', layout: 'panels',
     title: '국악극 「대청여관」과 1950년대 국악인',
     client: '국립부산국악원', kind: '전시 패널 8종',
@@ -167,6 +177,14 @@ root.innerHTML = PROJECTS.map(p => {
   </article>`;
 }).join('');
 
+// 작업 목차 카드
+document.getElementById('work-index').innerHTML = PROJECTS.map(p => `
+  <li data-cat="${p.cat}"><a href="#${p.id}">
+    <img src="img/${p.images[0][0]}.jpg" alt="" loading="lazy">
+    <span class="wi-cat">${CAT_NAME[p.cat]}</span>
+    <strong>${esc(p.title)}</strong>
+  </a></li>`).join('');
+
 // 수업 갤러리
 function fill(id, title, list) {
   document.getElementById(id).innerHTML = list.map(([file, cap]) => {
@@ -174,6 +192,20 @@ function fill(id, title, list) {
     return `<li><button type="button" data-idx="${i}"><img src="img/${file}.jpg" alt="${esc(cap)}" loading="lazy"></button></li>`;
   }).join('');
 }
+fill('st-slides', '교생 실습, 키캡 디자인 수업 슬라이드', [
+  ['st-1', '표지, 나를 보여줘! 키캡 디자인'],
+  ['st-3', '아이덴티티란?'],
+  ['st-5', '목차'],
+  ['st-6', '학습 목표'],
+  ['st-7', '심벌, 카카오톡·아디다스·애플 예시'],
+  ['st-8', '1. 나의 심볼 컨셉 잡기'],
+  ['st-9', '2. 시각적으로 표현하기'],
+  ['st-10', '3. 심볼 디자인 스케치하기'],
+  ['st-11', '4. 키캡 디자인 스케치'],
+  ['st-13', '정리, 심벌의 특징은?'],
+  ['st-14', '다음 시간 예고, 일러스트레이터로 디지털 구현'],
+]);
+fill('st-sheet', '교생 실습, 키캡 디자인 활동지', [['st-sheet', '단계별 활동지와 키캡 틀']]);
 fill('teach-slides', '키링 만들기 수업 슬라이드', [
   ['key-01_cover', '표지, 내가 좋아하는 키링 만들기'],
   ['key-02_hook1', '도입 질문, 지금 가방에 키링 달고 온 사람?'],
@@ -194,7 +226,7 @@ const filterBtns = document.querySelectorAll('[data-filter]');
 filterBtns.forEach(btn => btn.addEventListener('click', () => {
   const f = btn.dataset.filter;
   filterBtns.forEach(b => b.setAttribute('aria-pressed', String(b === btn)));
-  document.querySelectorAll('.project').forEach(a => { a.hidden = f !== 'all' && a.dataset.cat !== f; });
+  document.querySelectorAll('.project, .work-index li').forEach(a => { a.hidden = f !== 'all' && a.dataset.cat !== f; });
 }));
 
 // 라이트박스

@@ -16,8 +16,8 @@
 <header class="top">
   <a class="brand" href="#">김소망</a>
   <nav aria-label="주요 메뉴">
-    <a href="#work">작업</a>
     <a href="#teaching">수업</a>
+    <a href="#work">작업</a>
     <a href="#about">소개</a>
     <a href="#contact">연락하기</a>
   </nav>
@@ -31,7 +31,10 @@
         <span class="hero-line">그림을 그리고,<br>그 그림으로 전시와 홍보물과 책을 만듭니다.</span>
       </h1>
       <p class="hero-sub">경성대학교 시각디자인학과에서 교직이수 과정을 밟고 있는 그래픽 디자이너이자 일러스트레이터입니다. 국립부산국악원 전시 패널부터 BEXCO 국제 행사의 현수막까지 실제로 인쇄되어 걸리는 작업을 해 왔고, 지금은 대안교육기관 링컨학교에서 학생들에게 디자인과 미술을 가르치고 있습니다.</p>
-      <a class="hero-cta" href="#work">작업 보기</a>
+      <div class="hero-ctas">
+        <a class="hero-cta" href="#teaching">수업 보기</a>
+        <a class="hero-cta hero-cta-2" href="#work">작업 보기</a>
+      </div>
     </div>
     <figure class="hero-art">
       <img src="img/hero-clover.jpg" alt="토끼풀 꽃을 든 소녀 일러스트" width="1131" height="1600">
@@ -39,41 +42,63 @@
     </figure>
   </section>
 
-  <section class="field" aria-labelledby="field-title">
-    <h2 id="field-title">현장에 걸린 작업</h2>
-    <p>화면 속 시안이 아니라, 실제로 출력되어 설치된 모습입니다.</p>
-    <ul class="field-strip">
-      <li><button type="button" data-open="dc-install"><img src="img/dc-install.jpg" alt="국립부산국악원 복도에 설치된 대청여관 전시 패널" loading="lazy"></button><span>국립부산국악원 「대청여관」 전시</span></li>
-      <li><button type="button" data-open="psf-outdoor"><img src="img/psf-outdoor.jpg" alt="BEXCO 앞 야외 현수막과 단체 사진" loading="lazy"></button><span>2025 Public Servant Forum, BEXCO 야외 현수막</span></li>
-      <li><button type="button" data-open="chum-install"><img src="img/chum-install.jpg" alt="한복과 패널이 놓인 춤바람 전시 공간" loading="lazy"></button><span>「춤바람, 봄바람이 되어오다」 전시</span></li>
-      <li><button type="button" data-open="psf-stage"><img src="img/psf-stage.jpg" alt="행사장 무대 양옆의 세로 현수막" loading="lazy"></button><span>행사장 세로 현수막</span></li>
-      <li><button type="button" data-open="psf-xbanner"><img src="img/psf-xbanner.jpg" alt="행사장 입구 X배너" loading="lazy"></button><span>행사장 입구 X배너</span></li>
-      <li><button type="button" data-open="psf-brochure"><img src="img/psf-brochure.jpg" alt="인쇄된 Public Servant Forum 브로슈어 표지" loading="lazy"></button><span>행사 브로슈어</span></li>
-    </ul>
-  </section>
-
-  <section id="work" class="work" aria-labelledby="work-title">
-    <div class="work-head">
-      <h2 id="work-title">작업</h2>
-      <div class="filters" role="group" aria-label="분야별로 보기">
-        <button type="button" data-filter="all" aria-pressed="true">전체</button>
-        <button type="button" data-filter="public" aria-pressed="false">기관·행사</button>
-        <button type="button" data-filter="brand" aria-pressed="false">브랜딩·편집</button>
-        <button type="button" data-filter="illust" aria-pressed="false">일러스트</button>
+  <section class="profile" aria-labelledby="profile-title">
+    <h2 id="profile-title">한눈에 보기</h2>
+    <dl class="profile-grid">
+      <div>
+        <dt>학력</dt>
+        <dd><strong>경성대학교 시각디자인학과</strong> 재학<br>교직이수 과정</dd>
       </div>
-    </div>
-    <div id="projects"></div>
-    <noscript><p>작업 목록을 보려면 자바스크립트를 켜 주세요.</p></noscript>
+      <div>
+        <dt>교육 경험</dt>
+        <dd><strong>교생 실습</strong> 디자인전공실기 수업<br><strong>링컨학교</strong> 2025.05 ~ 현재<br>기숙사 사감, 디자인과 미술 수업</dd>
+      </div>
+      <div>
+        <dt>작업 분야</dt>
+        <dd>브랜드 디자인, 편집 디자인,<br>전시·행사 그래픽, 일러스트레이션</dd>
+      </div>
+      <div>
+        <dt>연락처</dt>
+        <dd><a href="mailto:tiop501@naver.com">tiop501@naver.com</a><br><a href="https://www.instagram.com/sommm617/" target="_blank" rel="noopener">@sommm617</a><br><a href="tel:01025613405">010-2561-3405</a></dd>
+      </div>
+    </dl>
+    <nav class="profile-jump" aria-label="이 페이지 안내">
+      <a href="#teaching"><strong>수업</strong><span>교생 실습과 링컨학교 수업자료</span></a>
+      <a href="#work"><strong>작업</strong><span>브랜딩, 전시, 행사, 일러스트 11개</span></a>
+      <a href="#about"><strong>소개</strong><span>할 수 있는 일과 경력</span></a>
+    </nav>
   </section>
 
   <section id="teaching" class="teaching" aria-labelledby="teaching-title">
     <div class="t-intro">
       <h2 id="teaching-title">수업</h2>
       <div>
-        <p class="t-lead">2025년 5월부터 링컨학교에서 학생들과 함께 지내며 디자인과 미술을 가르치고 있습니다.</p>
-        <p>기숙사 사감으로 학생들의 생활을 가까이에서 보기 때문에, 수업 주제도 학생들이 실제로 좋아하는 것에서 시작합니다. 수업 슬라이드와 활동지는 모두 직접 디자인했습니다.</p>
+        <p class="t-lead">교직이수 과정에서 교생 실습을 했고, 2025년 5월부터는 링컨학교에서 학생들과 함께 지내며 디자인과 미술을 가르치고 있습니다.</p>
+        <p>수업 주제는 학생들이 실제로 좋아하는 것에서 시작합니다. 수업 슬라이드, 활동지, 평가 기준은 모두 직접 만들었습니다.</p>
       </div>
     </div>
+
+    <article class="t-case t-first" aria-labelledby="st-title">
+      <p class="t-tag">교생 실습</p>
+      <h3 id="st-title">나를 보여줘! 키캡 디자인</h3>
+      <dl class="p-meta t-meta">
+        <div><dt>과목</dt><dd>2학년 디자인전공실기</dd></div>
+        <div><dt>준비한 자료</dt><dd>교수학습 과정안(세안), 수업 슬라이드 14장, 활동지, 수행평가 기준, 수업 대본</dd></div>
+      </dl>
+      <p class="t-case-text">아이덴티티가 무엇인지 카카오톡, 아디다스, 애플 로고로 먼저 보여 준 뒤, 학생이 자기 자신을 상징하는 심볼을 만들어 키보드 키캡에 적용하는 수업입니다. 학습 목표는 “자신의 상징을 도출해 심볼로 시각화하고, 키캡의 특성에 맞게 아이디어 스케치를 완성할 수 있다”입니다.</p>
+      <ol class="t-steps">
+        <li><strong>심볼 컨셉 잡기</strong>나를 한마디로 정의하고 성격 키워드 3가지, 좋아하는 것 적기</li>
+        <li><strong>시각적으로 표현하기</strong>한마디는 선으로, 성격은 도형으로, 좋아하는 것은 아이콘으로</li>
+        <li><strong>심볼 스케치</strong>이니셜, 사물 단순화, 추상 기호로 심볼 그리기</li>
+        <li><strong>키캡 스케치</strong>심볼, 도형, 아이콘을 키캡 틀 위에 자유롭게 배치하기</li>
+      </ol>
+      <h4 class="t-sub">수업 슬라이드</h4>
+      <ul class="gallery g-slides" id="st-slides"></ul>
+      <h4 class="t-sub">활동지</h4>
+      <ul class="gallery g-sheet" id="st-sheet"></ul>
+    </article>
+
+    <h3 class="t-part">링컨학교 수업 <span>2025.05 ~ 현재</span></h3>
 
     <div class="t-lessons">
       <div>
@@ -124,6 +149,22 @@
       <ul class="gallery g-kids" id="teach-stickers"></ul>
     </article>
     <p class="t-note">학생 작품은 이름을 빼고 실었습니다.</p>
+  </section>
+
+  <section id="work" class="work" aria-labelledby="work-title">
+    <div class="work-head">
+      <h2 id="work-title">작업</h2>
+      <div class="filters" role="group" aria-label="분야별로 보기">
+        <button type="button" data-filter="all" aria-pressed="true">전체</button>
+        <button type="button" data-filter="brand" aria-pressed="false">브랜딩·편집</button>
+        <button type="button" data-filter="public" aria-pressed="false">기관·행사</button>
+        <button type="button" data-filter="illust" aria-pressed="false">일러스트</button>
+      </div>
+    </div>
+    <p class="work-help">카드를 누르면 해당 작업으로 이동하고, 이미지를 누르면 크게 볼 수 있습니다.</p>
+    <ul class="work-index" id="work-index"></ul>
+    <div id="projects"></div>
+    <noscript><p>작업 목록을 보려면 자바스크립트를 켜 주세요.</p></noscript>
   </section>
 
   <section id="about" class="about" aria-labelledby="about-title">
